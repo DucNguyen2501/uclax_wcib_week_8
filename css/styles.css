@@ -21,10 +21,18 @@ body {
       justify-content: space-between; }
     body .container1 .nav-masthead {
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 48px; }
+      body .container1 .nav-masthead .active {
+        color: #fff;
+        border-bottom: 3px solid white; }
+      body .container1 .nav-masthead .nav-masthead:hover {
+        color: #094783; }
       body .container1 .nav-masthead .nav-link {
-        color: white; }
+        color: white;
+        padding: 0px;
+        margin-left: 15px;
+        margin-right: 15px; }
     body .container1 .row .col.hero-text {
       margin-left: 100px; }
       body .container1 .row .col.hero-text p {
@@ -204,3 +212,7 @@ body {
     font-weight: 600;
     background-color: transparent;
     border: none; }
+  body .btn-secondary:hover {
+    color: #094783;
+    background-color: transparent;
+    border-color: none; }

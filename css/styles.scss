@@ -25,11 +25,22 @@ body {
     .row.nav-bar{justify-content: space-between;}
     .nav-masthead {
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 48px;
+
+      .active{
+        color: #fff;
+        border-bottom: 3px solid white;}
+
+      .nav-masthead:hover{
+        color: rgb(9, 71, 131);}
+
       .nav-link{
         color: white;
-      }
+        padding: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+        }
     }
     .row{
       .col.hero-text{
@@ -279,7 +290,13 @@ body {
     font-size: 10px;
     font-weight: 600;
     background-color: transparent;
-    border: none;}
+    border: none;
+  }
+
+  .btn-secondary:hover {
+    color: rgb(9, 71, 131);
+    background-color: transparent;
+    border-color: none;}
 
 
 } // end of body
