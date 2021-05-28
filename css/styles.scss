@@ -1,7 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 21px;
-  background: #0cb3f8;
   letter-spacing: 2px;
 
   p.bar{font-size: 13px;
@@ -20,9 +19,15 @@ body {
     letter-spacing: normal;
   }
 
+  .row{margin-left: 7%;
+      margin-right: 7%;}
+
   .container1{
+    background: #0cb3f8;
     padding: 36px;
+
     .row.nav-bar{justify-content: space-between;}
+
     .nav-masthead {
       font-size: 12px;
       font-weight: 700;
@@ -44,8 +49,9 @@ body {
     }
     .row{
       .col.hero-text{
-        margin-left: 100px;
+        margin-left: 30px;
 
+        img{padding-right: 7px;}
         p{width: 80%;
           overflow: visible;
           margin-bottom: 100px;
@@ -58,15 +64,13 @@ body {
         .images{
           overflow-x: visible;
           margin-left: 45%;
-          margin-right: auto;
-        }
+          margin-right: auto;}
       }
 
     } // end of row justify-content-around
     } // end of container1
 
   .bar{
-    background: white;
     padding: 8px;
   }
 
@@ -77,37 +81,33 @@ body {
     .col-12.content{
       margin-bottom: 64px;
 
-      p{
-        width: 40%;
+      p{width: 40%;
         font-size: 16px;
         color: #747474;
         letter-spacing: normal;
         margin-left: auto;
-        margin-right: auto;
-        }
+        margin-right: auto;}
     } //end of col-12 content text-center
-    .row.content{
-      justify-content: center;
-    }
 
-    .col-3.content.text-center{
+    .row.content{
+      justify-content: center;}
+
+    .col-sm.content.text-center{
+      column-width: 300px;
 
       h3{font-weight: 600;
         font-size: 16px;
-        color: black;
-      }
+        color: black;}
 
       p{font-size: 13px;
         color: #747474;
-        letter-spacing: 2px;
-      }
+        letter-spacing: 2px;}
 
       .para{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 64px;
-      }
+        margin-bottom: 64px;}
     } //end of col-3 content text-center
   } // end of container2
 
@@ -116,7 +116,6 @@ body {
     padding: 48px 0px 48px 0px;
 
     .row{
-      margin-bottom: 48px;
 
       p{width: 40%;
         font-size: 16px;
@@ -124,28 +123,24 @@ body {
         letter-spacing: normal;
         margin-left: auto;
         margin-right: auto;
-
         .month{font-size: 13px;}
       }
 
       h2{color:white;}
     } //end of row
 
-
       .price{
         width: 80%;
         background: white;
         border-radius: 5px;
-        padding-top: 36px;
-        padding-bottom: 36px;
-        margin-left: 20px;
-        margin-right: 20px;
-
+        padding: 48px 0px 48px 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 36px;
 
         .btn-primary{
           border: 2px solid #1b8bf9;
-          color: black;
-        }
+          color: black;}
 
         h3{font-size: 48px;
           font-weight: 700;
@@ -154,24 +149,26 @@ body {
           letter-spacing: normal;
           line-height: 36px;
           margin-bottom:36px;
+          padding: 0;
+          list-style-type: none;
+          img{padding-right: 5px;}
         	}
         p{font-size: 16px;
           color: black;}
 
         &.alt{
           background: #1b8bf9;
-
           .btn-primary{
             border: 2px solid white;
             background: white;
-            color: black;
-          }
+            color: black;}
 
           h3{color: white;}
           p{color: white;}
           ul{color:white;}
         }
-      }
+
+      } // end of price
     } // end of container3
 
 
@@ -184,7 +181,7 @@ body {
     .subscribe{
       padding-top: 36px;
 
-      p{width: 40%;
+      p{width: 50%;
         font-size: 16px;
         color: #bcc6d0;
         letter-spacing: normal;
@@ -193,37 +190,33 @@ body {
 
       h2{color:white;}
     }
-    .form-subscribe {
-      width: 100%;
-      max-width: 500px;
-      padding-top: 36px;
-      padding-bottom: 56px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
     .row.form{
       display: flex;
+      margin: 20px 20px 60px 20px;
+      border: none;
 
       .btn-block{
         width: inherit;
-        margin: 24px;
-      }
+        border-radius: 5px;
+        background: white;
+        color: black;}
     }
 
-    .form-subscribe .form-control {
+    .row.form .form-control {
+      width: 400px;
       position: relative;
       border: none;
       background-color: rgba(255,255,255,0.2);
       height: auto;
       padding: 10px;
       font-size: 12px;
-      color: white;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
-    .form-subscribe input[type="email"] {
-      // border-top-right-radius: 0;
-      // border-bottom-right-radius: 0;
-    }
+    .row.form input[type="email"] {
+      color: white;}
   } // end of container4
 
   .footer{
@@ -240,13 +233,12 @@ body {
     }
 
       .icons{
-        padding: 0px 8px 0px 8px;
-      }
+        padding: 0px 8px 0px 8px;}
 
       .row.end.justify-content-around{
         padding-top: 36px;
 
-        .col-3.footer{
+        .col-sm.footer{
           padding: 0px;
 
         p{padding-left: 36px;
@@ -256,8 +248,9 @@ body {
             padding-right: 36px;
             text-align: right;}
           }
-        } // end of col-3 footer
+        } // end of col-sm footer
       } // end of row end
+
   } // end of footer
 
   .btn-primary{
@@ -267,7 +260,7 @@ body {
     font-weight: 600;
     font-size: 10px;
     background-color: transparent;
-    margin-right: 16px;
+    // margin-right: 16px;
     cursor: pointer;
   }
   .btn-primary.small{
@@ -297,6 +290,5 @@ body {
     color: rgb(9, 71, 131);
     background-color: transparent;
     border-color: none;}
-
 
 } // end of body
